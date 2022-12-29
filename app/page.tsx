@@ -1,9 +1,7 @@
-import React from "react";
-import LoginPage from "../components/LoginPage";
-import WholeUI from "../components/WholeUI";
+import LoginPage from '../components/LoginPage';
+import WholeUI from '../components/WholeUI';
 
-import { cookies } from "next/headers";
-import { authorize } from "../util/oauth";
+import { cookies } from 'next/headers';
 
 export default async function Index() {
   const nextCookies = cookies();
@@ -11,7 +9,7 @@ export default async function Index() {
 
   try {
     token = JSON.parse(
-      decodeURIComponent(nextCookies.get("token")?.value ?? "{}") ?? "{}"
+      decodeURIComponent(nextCookies.get('token')?.value ?? '{}') ?? '{}'
     );
   } catch {}
 
@@ -19,12 +17,12 @@ export default async function Index() {
     const twitterRequestOptions = {
       headers: {
         Authorization: `Bearer ${token.value}`,
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     };
 
     const me = await fetch(
-      "https://api.twitter.com/2/users/me?user.fields=profile_image_url",
+      'https://api.twitter.com/2/users/me?user.fields=profile_image_url',
       twitterRequestOptions
     )
       .then((r) => r.json())

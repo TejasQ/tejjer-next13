@@ -1,7 +1,6 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import Avatar from "./Avatar";
+import Avatar from './Avatar';
 
 function Timeline(props) {
   return (
@@ -21,13 +20,13 @@ function Timeline(props) {
               <div className="">
                 <div className="flex items-center gap-1">
                   <div>
-                    <strong>{tweet.author.name}</strong>{" "}
+                    <strong>{tweet.author.name}</strong>{' '}
                     <span className="text-gray-500">
-                      @{tweet.author.username}·{" "}
-                      {Intl.DateTimeFormat("en-US", {
-                        day: "2-digit",
-                        month: "short",
-                        year: "numeric",
+                      @{tweet.author.username}·{' '}
+                      {Intl.DateTimeFormat('en-US', {
+                        day: '2-digit',
+                        month: 'short',
+                        year: 'numeric',
                       }).format(new Date(tweet.created_at))}
                     </span>
                   </div>
@@ -41,25 +40,25 @@ function Timeline(props) {
               <div>
                 <ul className="flex items-center justify-between w-full gap-2 mt-2">
                   <li>
-                    <button onClick={(event) => alert("Not yet implemented!")}>
+                    <button onClick={(event) => alert('Not yet implemented!')}>
                       💬
                     </button>
                   </li>
 
                   <li>
-                    <button onClick={(event) => alert("Not yet implemented!")}>
+                    <button onClick={(event) => alert('Not yet implemented!')}>
                       ♻️
                     </button>
                   </li>
 
                   <li>
-                    <button onClick={(event) => alert("Not yet implemented!")}>
+                    <button onClick={(event) => alert('Not yet implemented!')}>
                       ❤️
                     </button>
                   </li>
 
                   <li>
-                    <button onClick={(event) => alert("Not yet implemented!")}>
+                    <button onClick={(event) => alert('Not yet implemented!')}>
                       🚀
                     </button>
                   </li>
