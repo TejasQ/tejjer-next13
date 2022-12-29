@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import Avatar from "./Avatar";
-import Button from "./Button";
-import SectionHeading from "./SectionHeading";
+import Avatar from './Avatar';
+import Button from './Button';
+import SectionHeading from './SectionHeading';
+
 export const peopleToFollow = [
   {
-    name: "Tejas Kumar",
-    handle: "@tejaskumar_",
-    profile_image_url: "https://github.com/tejasq.png",
+    name: 'Tejas Kumar',
+    handle: '@tejaskumar_',
+    profile_image_url: 'https://github.com/tejasq.png',
   },
 ];
 
@@ -21,7 +21,7 @@ function RightSidebar(props) {
             type="text"
             placeholder="Search Twitter"
             className="w-full px-4 py-2 text-white bg-gray-200 dark:bg-gray-700 rounded-3xl"
-            onClick={(event) => alert("Not yet implemented!")}
+            onClick={(event) => alert('Not yet implemented!')}
           />
         </div>
 
@@ -58,7 +58,7 @@ function RightSidebar(props) {
 
                   <div className="ml-auto">
                     <Button
-                      onClick={(event) => alert("Not yet implemented")}
+                      onClick={(event) => alert('Not yet implemented')}
                       condensed={true}
                     >
                       Follow

@@ -1,9 +1,8 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import { authorize } from "../util/oauth";
-import Button from "./Button";
-import Logo from "./Logo";
+import { authorize } from '../util/oauth';
+import Button from './Button';
+import Logo from './Logo';
 
 function LoginPage() {
   return (
@@ -25,7 +24,7 @@ function LoginPage() {
 
         <Button
           color="secondary"
-          onClick={(event) => window.open("github url @todo")}
+          onClick={(event) => window.open('github url @todo')}
         >
           Browse the Code
         </Button>

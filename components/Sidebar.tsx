@@ -1,10 +1,9 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import Avatar from "./Avatar";
-import Button from "./Button";
-import Logo from "./Logo";
-import MenuItem from "./MenuItem";
+import Avatar from './Avatar';
+import Button from './Button';
+import Logo from './Logo';
+import MenuItem from './MenuItem';
 
 function Sidebar(props) {
   return (
@@ -20,7 +19,7 @@ function Sidebar(props) {
               <MenuItem>
                 <button
                   className="w-full text-left"
-                  onClick={(event) => alert("Not yet implemented!")}
+                  onClick={(event) => alert('Not yet implemented!')}
                 >
                   Home
                 </button>
@@ -31,7 +30,7 @@ function Sidebar(props) {
               <MenuItem>
                 <button
                   className="w-full text-left"
-                  onClick={(event) => alert("Not yet implemented!")}
+                  onClick={(event) => alert('Not yet implemented!')}
                 >
                   Explore
                 </button>
@@ -42,7 +41,7 @@ function Sidebar(props) {
               <MenuItem>
                 <button
                   className="w-full text-left"
-                  onClick={(event) => alert("Not yet implemented!")}
+                  onClick={(event) => alert('Not yet implemented!')}
                 >
                   Communities
                 </button>
@@ -53,7 +52,7 @@ function Sidebar(props) {
               <MenuItem>
                 <button
                   className="w-full text-left"
-                  onClick={(event) => alert("Not yet implemented!")}
+                  onClick={(event) => alert('Not yet implemented!')}
                 >
                   Notifications
                 </button>
@@ -64,7 +63,7 @@ function Sidebar(props) {
               <MenuItem>
                 <button
                   className="w-full text-left"
-                  onClick={(event) => alert("Not yet implemented!")}
+                  onClick={(event) => alert('Not yet implemented!')}
                 >
                   Messages
                 </button>
@@ -75,7 +74,7 @@ function Sidebar(props) {
               <MenuItem>
                 <button
                   className="w-full text-left"
-                  onClick={(event) => alert("Not yet implemented!")}
+                  onClick={(event) => alert('Not yet implemented!')}
                 >
                   Bookmarks
                 </button>
@@ -86,7 +85,7 @@ function Sidebar(props) {
               <MenuItem>
                 <button
                   className="w-full text-left"
-                  onClick={(event) => alert("Not yet implemented!")}
+                  onClick={(event) => alert('Not yet implemented!')}
                 >
                   Profile
                 </button>
@@ -97,7 +96,7 @@ function Sidebar(props) {
               <MenuItem>
                 <button
                   className="w-full text-left"
-                  onClick={(event) => alert("Not yet implemented!")}
+                  onClick={(event) => alert('Not yet implemented!')}
                 >
                   More
                 </button>
@@ -109,7 +108,7 @@ function Sidebar(props) {
                 <Button
                   onClick={(event) =>
                     (document.querySelector(
-                      "#composer"
+                      '#composer'
                     ) as HTMLTextAreaElement)!.focus()
                   }
                   fullWidth={true}

@@ -1,8 +1,7 @@
-import * as React from "react";
-import Composer from "./Composer";
-import RightSidebar from "./RightSidebar";
-import Sidebar from "./Sidebar";
-import Timeline from "./Timeline";
+import Composer from './Composer';
+import RightSidebar from './RightSidebar';
+import Sidebar from './Sidebar';
+import Timeline from './Timeline';
 
 function WholeUI(props) {
   return (

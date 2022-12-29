@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import { useLocalObservable, observer } from "mobx-react-lite";
-import Avatar from "./Avatar";
-import Button from "./Button";
+import { useLocalObservable, observer } from 'mobx-react-lite';
+import Avatar from './Avatar';
+import Button from './Button';
+
 export const postTweet = async ({
   text,
   token,
@@ -11,21 +11,21 @@ export const postTweet = async ({
   text: string;
   token: string;
 }) => {
-  return await fetch("/api/tweet", {
-    method: "POST",
+  return await fetch('/api/tweet', {
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       text,
     }),
   })
     .then((r) => r.json())
-    .then(() => alert("Done!"));
+    .then(() => alert('Done!'));
 };
 
 function Composer(props) {
-  const state = useLocalObservable(() => ({ tweet: "" }));
+  const state = useLocalObservable(() => ({ tweet: '' }));
 
   return (
     <>
@@ -53,31 +53,31 @@ function Composer(props) {
         <div className="grid p-4 grid-cols-[1fr,auto]">
           <ul className="flex items-center gap-4">
             <li>
-              <button onClick={(event) => alert("Not yet implemented!")}>
+              <button onClick={(event) => alert('Not yet implemented!')}>
                 📸
               </button>
             </li>
 
             <li>
-              <button onClick={(event) => alert("Not yet implemented!")}>
+              <button onClick={(event) => alert('Not yet implemented!')}>
                 📊
               </button>
             </li>
 
             <li>
-              <button onClick={(event) => alert("Not yet implemented!")}>
+              <button onClick={(event) => alert('Not yet implemented!')}>
                 😄
               </button>
             </li>
 
             <li>
-              <button onClick={(event) => alert("Not yet implemented!")}>
+              <button onClick={(event) => alert('Not yet implemented!')}>
                 🕙
               </button>
             </li>
 
             <li>
-              <button onClick={(event) => alert("Not yet implemented!")}>
+              <button onClick={(event) => alert('Not yet implemented!')}>
                 📍
               </button>
             </li>
